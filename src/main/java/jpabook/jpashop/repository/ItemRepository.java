@@ -19,9 +19,10 @@ public class ItemRepository {
             em.persist(item);
 
         // id가 있는 경우 == 기존에 존재하는 item을 업데이트 하는 로직
-        } else {
-            em.merge(item);
         }
+//        else {
+//            em.merge(item);
+//        }
     }
 
     public Item findOne(Long id) {
